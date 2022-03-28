@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using InterviewApp.Models;
 using MvvmHelpers;
+using Plugin.Media;
 using Xamarin.Forms;
 
 namespace InterviewApp.ViewModels
@@ -27,6 +29,10 @@ namespace InterviewApp.ViewModels
             set => SetProperty(ref _description, value, onChanged: SaveCommand.ChangeCanExecute);
         }
 
+        string imagedir = "";
+
+        public Command UploadBtn { get; }
+
         public Command SaveCommand { get; }
         public Command CancelCommand { get; }
 
@@ -35,6 +41,7 @@ namespace InterviewApp.ViewModels
         {
             SaveCommand   = new Command(Save, ValidateSave);
             CancelCommand = new Command(Cancel);
+            UploadBtn = new Command(Upload);
         }
 
         // Methods
@@ -44,6 +51,7 @@ namespace InterviewApp.ViewModels
         }
 
         private void Cancel() => CancelAsync().SafeFireAndForget();
+        private void Upload() => UploadAsync().SafeFireAndForget();
 
         private void Save() => SaveAsync().SafeFireAndForget();
 
@@ -51,6 +59,13 @@ namespace InterviewApp.ViewModels
         {
             // This will pop the current page off the navigation stack
             await Shell.Current.GoToAsync("..");
+        }
+
+        private async Task UploadAsync()
+        {
+            // This will pop the current page off the navigation stack
+            await CrossMedia.Current.Initialize();
+            await CrossMedia.Current.PickPhotoAsync();
         }
 
         private async Task SaveAsync()

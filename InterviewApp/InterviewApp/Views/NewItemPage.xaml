@@ -1,5 +1,6 @@
 ﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+
              xmlns:vm="clr-namespace:InterviewApp.ViewModels"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              x:Class="InterviewApp.Views.NewItemPage"
@@ -10,6 +11,7 @@
 
     <ContentPage.BindingContext>
         <vm:NewItemViewModel />
+        
     </ContentPage.BindingContext>
 
     <StackLayout Spacing="3"
@@ -23,12 +25,20 @@
 
         <Label Text="Description"
                FontSize="Medium" />
+        
 
         <Editor Text="{Binding Description, Mode=TwoWay}"
                 AutoSize="TextChanges"
                 FontSize="Medium"
                 Margin="0" />
+        
+        <Label Text="Image"
+               FontSize="Medium" />
 
+        <Button
+                Text="Multiply by 2"
+                Command="{Binding UploadBtn}" />
+        
         <StackLayout Orientation="Horizontal">
 
             <Button Text="Cancel"

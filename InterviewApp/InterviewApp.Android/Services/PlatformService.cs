@@ -1,4 +1,8 @@
-﻿using InterviewApp.Interfaces;
+﻿using InterviewApp.Droid.Services;
+using InterviewApp.Interfaces;
+using System.Runtime.CompilerServices;
+// I register the Dependency directly , and the cause of the bug was that the dependency was not registered so Xamarin was never finding them at the runtime;
+[assembly: Xamarin.Forms.Dependency(typeof(PlatformService))]
 
 namespace InterviewApp.Droid.Services
 {
