@@ -17,6 +17,21 @@ In the beginning, I had some difficulties with the bug fix of the dependency sin
  I want to thank you all for this chance, I don't know if I will be chosen for the job but it was really fun working with something new and learning a new language. It is something that I will use in the future. 
  Finally, I think this task reflects my knowledge and drive to learn new stuff and if I'm accepted I will give 100% like I always do.
 
+### Issue
+I've noticed that the user who did the commits etc was an old account of mine, that happen because the account was still logged in on my computer and since both have the same email. 
+I was afraid that you might think that I wasn't the author of the code so after a little research I found a way to prove the authenticity of the code.
+
+![Screenshot of the About Page on Android](Screenshots/issue_1.png)
+
+So this is the email account of my current account.
+
+![Screenshot of the About Page on Android](Screenshots/issue_2.png)
+
+and this is the email account from the commits. Basically what I did was extract the information from a commit
+Here is the link from the issue 
+https://docs.github.com/en/pull-requests/committing-changes-to-your-project/troubleshooting-commits/why-are-my-commits-linked-to-the-wrong-user
+
+If you need any additional information, don't hesitate to ask.
 ### New App Features
 
 New Login page with users added
