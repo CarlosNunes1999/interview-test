@@ -73,7 +73,7 @@ namespace InterviewApp.ViewModels
             }
         }
         /// <summary>
-        /// Add an item on db
+        /// Add an item page
         /// </summary>
         private void AddItem()
         {
