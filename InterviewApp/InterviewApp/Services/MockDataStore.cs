@@ -104,7 +104,8 @@ namespace InterviewApp.Services
         /// <returns></returns>
         public async Task<List<Account>> GetAccountAsync(string username, string password)
         {
-            return await Task.FromResult(_accounts);
+            
+            return await Task.FromResult(_accounts.Where(user => user.Username == username && user.Password == password).ToList());
         }
         /// <summary>
         /// Get a list of all accounts on the table

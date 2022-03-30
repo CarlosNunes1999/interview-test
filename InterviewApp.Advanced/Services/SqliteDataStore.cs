@@ -178,7 +178,7 @@ namespace InterviewApp.Services
             }
             finally
             {
-                db?.Dispose();
+                db.Dispose();
             }
         }
         /// <summary>

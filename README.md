@@ -43,6 +43,22 @@ This is a cross-platform library that contains some common code. Defines the `It
 - **Libraries/InterviewApp.Advanced:**
 This is a cross-platform library that provides an EF Core implementation of the `IDataStore` interface.
 
+### New App Features
+
+New Login page with users added
+![Screenshot of the About Page on Android](Screenshots/login.png)
+![Screenshot of the About Page on Android](Screenshots/login_1.png)
+Added Images on Browser page
+![Screenshot of the About Page on Android](Screenshots/Feature_Image_1.png)
+![Screenshot of the About Page on Android](Screenshots/Feature_Image_2.png)
+![Screenshot of the About Page on Android](Screenshots/Feature_Image_3.png)
+
+### Bug Fixes
+Fixed the bug in About page, now shows your device
+![Screenshot of the About Page on Android](Screenshots/bug_fix.png)
+
+
+
 ### App Features
 The app currently has three main features.
 

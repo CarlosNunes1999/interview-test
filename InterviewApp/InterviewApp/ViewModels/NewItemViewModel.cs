@@ -32,7 +32,7 @@ namespace InterviewApp.ViewModels
             set => SetProperty(ref _description, value, onChanged: SaveCommand.ChangeCanExecute);
         }
         public string? _imagePath = "";
-        public string imagePath
+        public string? imagePath
         {
 
             get => _imagePath;
@@ -81,7 +81,10 @@ namespace InterviewApp.ViewModels
                 CompressionQuality = 60
             }
             );
-            imagePath = imageFile.Path;
+            if(imageFile != null)imagePath = imageFile.Path;
+            
+      
+            
         }
 
         private async Task SaveAsync()
@@ -91,7 +94,7 @@ namespace InterviewApp.ViewModels
                 Id = Guid.NewGuid(),
                 Text = Text,
                 Description = Description,
-                imagePath = this.imagePath
+                imagePath = imagePath
             };
 
             await DataStore.AddItemAsync(newItem);

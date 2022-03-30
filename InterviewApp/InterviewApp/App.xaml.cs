@@ -18,6 +18,7 @@ namespace InterviewApp
             DependencyService.Register<IDataStore<Item,Account>, MockDataStore>();
 #endif
             DependencyService.Register<InterviewApp.Interfaces.IAlerts, Services.AlertsImplementation>();
+  
             MainPage = new AppShell();
         }
     }
