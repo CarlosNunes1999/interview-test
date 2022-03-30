@@ -1,7 +1,7 @@
 # BEIER360 Interview Test
 ## Contents
-- [Setup Guide](https://github.com/ashleyswanson360-org/beier360-interview-test/blob/main/README.md#setup-guide)
-- [Project Structure](https://github.com/ashleyswanson360-org/beier360-interview-test/blob/main/README.md#project-structure)
+- [Thoughts](https://github.com/ashleyswanson360-org/beier360-interview-test/blob/main/README.md#thought)
+- [New App Features](https://github.com/ashleyswanson360-org/beier360-interview-test/blob/main/README.md#newappfeatures)
 - [Tasks](https://github.com/ashleyswanson360-org/beier360-interview-test/blob/main/README.md#tasks)
   - [Task 1 - Fix](https://github.com/ashleyswanson360-org/beier360-interview-test/blob/main/README.md#tasks)
   - [Task 2 - Improve](https://github.com/ashleyswanson360-org/beier360-interview-test/blob/main/README.md#tasks)
