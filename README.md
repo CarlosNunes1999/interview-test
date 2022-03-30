@@ -37,21 +37,6 @@ Fixed the bug in About page, now shows your device
 
 
 
-### App Features
-The app currently has three main features.
-
-- **About:**
-A simple page that has a button to open Xamarin documentation, and a label to display the device's make and model.
-
-![Screenshot of the About Page on Android](Screenshots/Android.jpg)
-![Screenshot of the About Page on iOS](Screenshots/iOS.jpg)
-
-- **Items:**
-A list of items, each with a title and description. Each item can be opened in it's own detail page, and you can add new items.
-
-- **Login:**
-By logging out, you are taken to a login page and are unable to navigate to other pages in the app. Logging in returns you to the About page.
-
 ## Tasks
 There are four tasks to complete.
 
@@ -72,19 +57,6 @@ When using this advanced data store, the app will log an error when opening the 
 	
 Please document your work and your thought-process, through commits, comments or just a log in a .txt file.
 
-## How to Submit
-When you have finished all of the tasks, ensure you follow these steps to submit your work.
-
-1. View your private repository on GitHub, and go to "Settings > Collaborators > Add people".
-2. Invite Ashley using his GitHub username `ashleyswanson360` or email `ashley.swanson@beier360.com`.
-2. Reply to the invitation email with a link to your private repository.
-
-## Support
-### Links
-
-- [Xamarin Documentation](https://docs.microsoft.com/en-us/xamarin/)
-- [Installing Xamarin](https://docs.microsoft.com/en-us/xamarin/get-started/installation)
-- [Xamarin.Forms Fundamentals](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/)
 
 ### FAQs
 
