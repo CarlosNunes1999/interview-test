@@ -10,13 +10,15 @@
 - [How to Submit](https://github.com/ashleyswanson360-org/beier360-interview-test/blob/main/README.md#how-to-submit)
 - [Support](https://github.com/ashleyswanson360-org/beier360-interview-test/blob/main/README.md#support)
 
+## Toughts
+
 ## Setup Guide
 To complete the test, you will be creating your own private repository from a template.
 
 1. View this repository on GitHub, and click "Use this template".
 2. Make sure the "Owner" is set to your **personal GitHub account**.
-3. Make sure the "Visibility" is set to **Private**.
-4. Give it a name and click "Create repository from template".
+3. Make sure the "Visibility" is set to **Private**. 
+4. Give it a name and click "Create repository from template". 
 
 ## Project Structure
 The app is a modified version of the default Xamarin.Forms project. The solution consists of five projects.
@@ -55,19 +57,19 @@ By logging out, you are taken to a login page and are unable to navigate to othe
 There are four tasks to complete.
 
 1. **Fix:**
-When pressing the Update button on the About page, to load the device's make and model, the app crashes. You need to debug and solve this issue.
+When pressing the Update button on the About page, to load the device's make and model, the app crashes. You need to debug and solve this issue.- **Completed**
 
 2. **Improve:**
-Make an improvement to any of the three existing features. This could be cleaning or optimising the code, or improving the user experience.
+Make an improvement to any of the three existing features. This could be cleaning or optimising the code, or improving the user experience.- **Completed**
 
 3. **Implement:**
 Add a new feature to the app. Make sure you adhere to any third-party licences, and attribute any work that is not your own.
-It should not require any preparation from us to test it. We should be able to download and immediately run your app.
+It should not require any preparation from us to test it. We should be able to download and immediately run your app.- **Completed**
 
 4. **Advanced (optional):**
 By default, the Items feature does not persist changes between sessions. The `InterviewApp.Advanced` library provides an implementation of the data store that persists the items to the device using EF Core and a SQLite database.
 You can switch to use this advanced data store by defining the `ADVANCED` compilation symbol in the `InterviewApp` project settings. (Or you can uncomment the `DefineConstants` line when manually editing the `InterviewApp.csproj` file).
-When using this advanced data store, the app will log an error when opening the Items page and will crash when trying to add a new item. You need to debug and solve this issue.
+When using this advanced data store, the app will log an error when opening the Items page and will crash when trying to add a new item. You need to debug and solve this issue.- **Completed**
 	
 Please document your work and your thought-process, through commits, comments or just a log in a .txt file.
 
