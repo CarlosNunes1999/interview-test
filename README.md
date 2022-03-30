@@ -10,7 +10,12 @@
 - [How to Submit](https://github.com/ashleyswanson360-org/beier360-interview-test/blob/main/README.md#how-to-submit)
 - [Support](https://github.com/ashleyswanson360-org/beier360-interview-test/blob/main/README.md#support)
 
-## Toughts
+## Thoughts
+First of all, thank you for the opportunity given to do this task. 
+I think I learned a lot by doing this since I have no background in Xamarin. 
+In the beginning, I had some difficulties with the bug fix of the dependency since it was something that I never touched, after some research, I found that Xamarin is very similar to c# something that I've worked on in Portugal for three years so after some extensive hours I got assimilated to this type of language.
+ I want to thank you all for this chance, I don't know if I will be chosen for the job but it was really fun working with something new and learning a new language. It is something that I will use in the future. 
+ Finally, I think this task reflects my knowledge and drive to learn new stuff even if I don't know it and if I'm accepted I will give 100% like I always do.
 
 ## Setup Guide
 To complete the test, you will be creating your own private repository from a template.
