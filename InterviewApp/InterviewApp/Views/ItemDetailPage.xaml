@@ -22,6 +22,12 @@
 
         <Label Text="{Binding Description}"
                FontSize="Small" />
+        <Image WidthRequest="300" HeightRequest="300">
+
+            <Image.Source>
+                <FileImageSource File="{Binding imagePath, Mode=TwoWay}" />
+            </Image.Source>
+        </Image >
     </StackLayout>
 
 </ContentPage>

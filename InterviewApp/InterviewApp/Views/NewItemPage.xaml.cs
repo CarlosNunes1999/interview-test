@@ -6,9 +6,7 @@ namespace InterviewApp.Views
     {
         public NewItemPage()
         {
-            InitializeComponent();
-
-       
+            InitializeComponent();       
         }
 
     }

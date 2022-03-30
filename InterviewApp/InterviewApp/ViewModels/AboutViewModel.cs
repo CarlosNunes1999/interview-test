@@ -8,31 +8,42 @@ namespace InterviewApp.ViewModels
 {
     public class AboutViewModel : BaseViewModel
     {
+        #region Properties
+        public ICommand UpdateCommand { get; }
+        public ICommand OpenWebCommand { get; }
+
         private string _platformString = "";
+        #endregion
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        public AboutViewModel()
+        {
+            Title = "About";
+
+            UpdateCommand = new Command(Update);
+            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
+        }
+
+        #region Methods
+
+        /// <summary>
+        /// Variable PlatformString
+        /// </summary>
         public string PlatformString
         {
             get => _platformString;
             set => SetProperty(ref _platformString, value);
         }
-
-        public ICommand UpdateCommand  { get; }
-        public ICommand OpenWebCommand { get; }
-
-        
-        public AboutViewModel()
-        {
-            Title = "About";
-        
-            UpdateCommand  = new Command(Update);
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
-        }
-
+        /// <summary>
+        /// Updates the Platform String
+        /// </summary>
         private void Update()
         {
-            // Get our platform-specific service from the dependency service, and
-            // call some platform specific code to fetch a string to bind to the UI
-           
             PlatformString = PlatformService.GetPlatformSpecificString();
-        }
+        } 
+
+        #endregion
     }
 }

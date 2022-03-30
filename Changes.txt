@@ -1,0 +1,11 @@
+23:05 28/03/2022 Fix the bug on about page where I had to add the register for the Dependency. Could register on the app but added directly on the service.
+00:05 29/03/2022 Start adding some regions so the code look more clean and easy to locate the block of code looking for
+00:30 29/03/2022 Group methods with methods, functions with functions, and variables with variables
+15:27 29/03/2022 Create a button on newitempage where users can select a photo from the galery
+16:00 29/03/2022 Add the respective links of the photo in ItemsPage and DetailItemPage so users can see the photos for the item.
+19:33 29/03/2022 Start the creation of the new login page, added the respective entrys for username and password
+20:48 29/03/2022 Added the new table "Accounts" on datastore, and added Accounts as a parameter in interface IDataStore to attempt to optimize code.
+11:13 30/03/2022 Create AsyncAlerts, so I could access LoginPage asyncronized and send alerts if the user was correctly connected or not.
+12:14 30/03/2022 Fix some bugs and tweak some code.
+14:22 30/03/2022 Start adding summarys and complete the organization of the code
+16:03 30/03/2022 Fix bug affecting SQLiteDatastore, now app is capable of record data without losing the information after changing sessions

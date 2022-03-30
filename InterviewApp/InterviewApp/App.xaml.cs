@@ -2,6 +2,7 @@
 using InterviewApp.Models;
 using InterviewApp.Services;
 using InterviewApp.Interfaces;
+using System;
 
 namespace InterviewApp
 {
@@ -12,11 +13,11 @@ namespace InterviewApp
             InitializeComponent();
 
 #if ADVANCED
-            DependencyService.Register<IDataStore<Item>, SqliteDataStore>();
+            DependencyService.Register<IDataStore<Item,Account>, SqliteDataStore>();
 #else
-            DependencyService.Register<IDataStore<Item>, MockDataStore>();
+            DependencyService.Register<IDataStore<Item,Account>, MockDataStore>();
 #endif
-
+            DependencyService.Register<InterviewApp.Interfaces.IAlerts, Services.AlertsImplementation>();
             MainPage = new AppShell();
         }
     }

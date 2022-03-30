@@ -8,46 +8,53 @@
              ios:Page.UseSafeArea="true"
              BackgroundColor="White"
              Title="New Item">
-
     <ContentPage.BindingContext>
         <vm:NewItemViewModel />
-        
+
     </ContentPage.BindingContext>
+    <ScrollView>
+        <StackLayout Spacing="3"
+                     Padding="15" VerticalOptions="Fill">
 
-    <StackLayout Spacing="3"
-                 Padding="15">
+            <Label Text="Text"
+                   FontSize="Medium" />
 
-        <Label Text="Text"
-               FontSize="Medium" />
+            <Entry Text="{Binding Text, Mode=TwoWay}"
+                   FontSize="Medium" />
 
-        <Entry Text="{Binding Text, Mode=TwoWay}"
-               FontSize="Medium" />
+            <Label Text="Description"
+                   FontSize="Medium" />
 
-        <Label Text="Description"
-               FontSize="Medium" />
-        
 
-        <Editor Text="{Binding Description, Mode=TwoWay}"
-                AutoSize="TextChanges"
-                FontSize="Medium"
-                Margin="0" />
-        
-        <Label Text="Image"
-               FontSize="Medium" />
+            <Editor Text="{Binding Description, Mode=TwoWay}"
+                    AutoSize="TextChanges"
+                    FontSize="Medium"
+                    Margin="0" />
 
-        <Button
-                Text="Multiply by 2"
-                Command="{Binding UploadBtn}" />
-        
-        <StackLayout Orientation="Horizontal">
+            <Label Text="Image"
+                   FontSize="Medium" />
 
-            <Button Text="Cancel"
-                    Command="{Binding CancelCommand}"
-                    HorizontalOptions="FillAndExpand" />
+            <Image WidthRequest="100" HeightRequest="100">
 
-            <Button Text="Save"
-                    Command="{Binding SaveCommand}"
-                    HorizontalOptions="FillAndExpand" />
+                <Image.Source>
+                    <FileImageSource File="{Binding imagePath, Mode=TwoWay}" />
+                </Image.Source>
+            </Image >
+
+            <Button
+                    Text="Select"
+                    Command="{Binding UploadImageCommand}" />
+
+            <StackLayout Orientation="Horizontal">
+
+                <Button Text="Cancel"
+                        Command="{Binding CancelCommand}"
+                        HorizontalOptions="FillAndExpand" />
+
+                <Button Text="Save"
+                        Command="{Binding SaveCommand}"
+                        HorizontalOptions="FillAndExpand" />
+            </StackLayout>
         </StackLayout>
-    </StackLayout>
+    </ScrollView>
 </ContentPage>

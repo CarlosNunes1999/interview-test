@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace InterviewApp.Interfaces
 {
-    public interface IDependency
+    public interface IAlerts
     {
-        MemoryStream DrawImageFromNameToArray(string fileName);
+        Task ShowAlertsAsync(string Title, string Message);
     }
 }

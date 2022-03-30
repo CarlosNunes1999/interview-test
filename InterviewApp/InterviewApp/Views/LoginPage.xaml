@@ -13,9 +13,18 @@
 
     <StackLayout Padding="10,0,10,0"
                  VerticalOptions="Center">
+        <Label Text="Username"/>
+        <Entry Placeholder="Username" Text="{Binding username}" PlaceholderColor="Black"/>
+
+        <Label Text="Password"/>
+        <Entry IsPassword="true" Text="{Binding password}" Placeholder="Password" PlaceholderColor="Black"/>
 
         <Button VerticalOptions="Center"
                 Text="Login"
                 Command="{Binding LoginCommand}" />
+        <Button VerticalOptions="Center"
+                Text="Register"
+                Command="{Binding RegisterCommand}" />
+        
     </StackLayout>
 </ContentPage>

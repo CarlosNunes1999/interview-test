@@ -40,7 +40,15 @@
                                LineBreakMode="NoWrap"
                                Style="{DynamicResource ListItemDetailTextStyle}"
                                FontSize="13" />
-                        <Image x:Name="fileImage" Aspect="AspectFit" HeightRequest="60" WidthRequest="70"/>
+                        
+                        <Image WidthRequest="100" HeightRequest="100">
+
+                            <Image.Source>
+                                <FileImageSource File="{Binding imagePath, Mode=TwoWay}" />
+                            </Image.Source>
+                        </Image >
+
+
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer NumberOfTapsRequired="1"
                                                   Command="{Binding SelectItemCommand, Source={RelativeSource Mode=FindAncestorBindingContext, AncestorType={x:Type vm:ItemsViewModel}}}"

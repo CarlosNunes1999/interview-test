@@ -10,11 +10,11 @@ namespace InterviewApp.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-      
 
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+
+        #region Properties
+        public IDataStore<Item, Account> DataStore => DependencyService.Get<IDataStore<Item, Account>>();
         public IPlatformService PlatformService => DependencyService.Get<IPlatformService>();
-  
 
         private bool _isBusy = false;
         public bool IsBusy
@@ -30,6 +30,9 @@ namespace InterviewApp.ViewModels
             set => SetProperty(ref _title, value);
         }
 
+        #endregion
+
+        #region Methods
         protected bool SetProperty<T>(ref T backingStore, T value,
             [CallerMemberName] string propertyName = "",
             Action? onChanged = null)
@@ -53,6 +56,7 @@ namespace InterviewApp.ViewModels
 
             changed.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+        #endregion
         #endregion
     }
 }

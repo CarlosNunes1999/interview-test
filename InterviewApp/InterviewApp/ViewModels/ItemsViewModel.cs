@@ -12,7 +12,8 @@ namespace InterviewApp.ViewModels
 {
     public class ItemsViewModel : BaseViewModel
     {
-        // Properties
+       
+        #region Properties
         public ObservableCollection<Item> Items { get; }
 
         private Item? _selectedItem;
@@ -26,24 +27,30 @@ namespace InterviewApp.ViewModels
             }
         }
 
-        public Command LoadItemsCommand  { get; }
-        public Command AddItemCommand    { get; }
+        public Command LoadItemsCommand { get; }
+        public Command AddItemCommand { get; }
         public Command SelectItemCommand { get; }
+        #endregion
 
-        // Ctor
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public ItemsViewModel()
         {
             Title = "Browse";
             Items = new ObservableCollection<Item>();
 
-            LoadItemsCommand  = new Command(LoadItems);
-            AddItemCommand    = new Command(AddItem);
+            LoadItemsCommand = new Command(LoadItems);
+            AddItemCommand = new Command(AddItem);
             SelectItemCommand = new Command<Item?>(SelectItem);
         }
 
-        // Methods
+        #region Methods
         private void LoadItems() => LoadItemsAsync().SafeFireAndForget();
-
+        /// <summary>
+        /// Load all items
+        /// </summary>
+        /// <returns></returns>
         private async Task LoadItemsAsync()
         {
             IsBusy = true;
@@ -65,12 +72,17 @@ namespace InterviewApp.ViewModels
                 IsBusy = false;
             }
         }
-
+        /// <summary>
+        /// Add an item on db
+        /// </summary>
         private void AddItem()
         {
             Shell.Current.GoToAsync(nameof(NewItemPage)).SafeFireAndForget();
         }
-
+        /// <summary>
+        /// Select an item
+        /// </summary>
+        /// <param name="item"></param>
         private void SelectItem(Item? item)
         {
             if (item == default)
@@ -84,6 +96,7 @@ namespace InterviewApp.ViewModels
         {
             IsBusy = true;
             SelectedItem = null;
-        }
+        } 
+        #endregion
     }
 }

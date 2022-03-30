@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Android.Graphics;
+using System;
 
 namespace InterviewApp.Models
 {
@@ -10,6 +11,6 @@ namespace InterviewApp.Models
 
         public string Description { get; set; } = "";
 
-        public string Image { get; set; } = "";
+        public string imagePath { get; set; } = "";
     }
 }
