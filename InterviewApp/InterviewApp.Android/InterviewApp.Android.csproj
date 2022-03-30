@@ -39,6 +39,7 @@
     <BundleAssemblies>false</BundleAssemblies>
     <AndroidLinkSkip>InterviewApp.Basic;</AndroidLinkSkip>
     <MandroidI18n />
+    <AndroidSupportedAbis />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
