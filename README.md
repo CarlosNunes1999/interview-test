@@ -17,38 +17,13 @@ In the beginning, I had some difficulties with the bug fix of the dependency sin
  I want to thank you all for this chance, I don't know if I will be chosen for the job but it was really fun working with something new and learning a new language. It is something that I will use in the future. 
  Finally, I think this task reflects my knowledge and drive to learn new stuff even if I don't know it and if I'm accepted I will give 100% like I always do.
 
-## Setup Guide
-To complete the test, you will be creating your own private repository from a template.
-
-1. View this repository on GitHub, and click "Use this template".
-2. Make sure the "Owner" is set to your **personal GitHub account**.
-3. Make sure the "Visibility" is set to **Private**. 
-4. Give it a name and click "Create repository from template". 
-
-## Project Structure
-The app is a modified version of the default Xamarin.Forms project. The solution consists of five projects.
-
-- **InterviewApp:**
-The cross-platform Xamarin.Forms project, containing all shared code.
-
-- **InterviewApp.Android:**
-The platform specific project for Android. This is the project you run when developing for Android.
-
-- **InterviewApp.iOS:**
-The platform specific project for iOS. This is the project you run when developing for iOS.
-
-- **Libraries/InterviewApp.Basic:**
-This is a cross-platform library that contains some common code. Defines the `Item` model and the `IDataStore` interface.
-
-- **Libraries/InterviewApp.Advanced:**
-This is a cross-platform library that provides an EF Core implementation of the `IDataStore` interface.
-
 ### New App Features
 
 New Login page with users added
 
 ![Screenshot of the About Page on Android](Screenshots/login.png)
 ![Screenshot of the About Page on Android](Screenshots/login_1.png)
+
 Added Images on Browser page
 
 ![Screenshot of the About Page on Android](Screenshots/Feature_Image_1.png)
