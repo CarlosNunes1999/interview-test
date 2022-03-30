@@ -18,7 +18,7 @@ In the beginning, I had some difficulties with the bug fix of the dependency sin
  Finally, I think this task reflects my knowledge and drive to learn new stuff and if I'm accepted I will give 100% like I always do.
 
 ### Issue
-I've noticed that the user who did the commits etc was an old account of mine, that happen because the account was still logged in on my computer and since both have the same email. 
+I've noticed that the user who did the commits etc was an old account of mine, that happen because the account was still logged in on my computer and since both have the same email the commits were made on that one but shown on the one where the repository was created. 
 I was afraid that you might think that I wasn't the author of the code so after a little research I found a way to prove the authenticity of the code.
 
 ![Screenshot of the About Page on Android](Screenshots/issue_1.png)
